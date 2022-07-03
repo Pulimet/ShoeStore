@@ -1,4 +1,4 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.ui.binding
 
 import android.view.View
 import androidx.fragment.app.Fragment
