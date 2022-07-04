@@ -21,12 +21,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setupBinding()
         setSupportActionBar(binding.toolbar)
-        setupNavigation()
     }
 
     private fun setupBinding() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        setupNavigation()
     }
 
     private fun setupNavigation() {

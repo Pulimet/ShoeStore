@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.welcome.WelcomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- LinealLayout is more efficient here, because in this layout we have views arranged vertically.-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <Button
             android:id="@+id/btnInstructions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/instructions"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_gravity="center"
+            android:text="@string/instructions" />
 
         <TextView
             android:id="@+id/tvFirst"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:lines="1"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnInstructions" />
+            android:text="@string/lorem_ipsum" />
 
         <TextView
             android:id="@+id/tvSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvFirst" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="@string/lorem_ipsum" />
+    </LinearLayout>
 </androidx.core.widget.NestedScrollView>
