@@ -32,9 +32,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupNavigation() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+        appBarConfiguration = AppBarConfiguration(getSetOfHomeDestinations())
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
+
+    private fun getSetOfHomeDestinations() =
+        setOf(R.id.loginFragment, R.id.welcomeFragment, R.id.instructionsFragment, R.id.shoesListFragment)
 
     override fun onSupportNavigateUp() = navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 }
