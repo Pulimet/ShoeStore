@@ -1,4 +1,4 @@
-package com.udacity.shoestore.ui.shoes
+package com.udacity.shoestore.ui.shoes.list
 
 import android.os.Bundle
 import android.view.View
