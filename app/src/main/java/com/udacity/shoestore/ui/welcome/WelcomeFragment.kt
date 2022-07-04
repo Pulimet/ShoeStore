@@ -16,7 +16,7 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToLoginFragment())
+            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToShoesListFragment())
         }
     }
 
