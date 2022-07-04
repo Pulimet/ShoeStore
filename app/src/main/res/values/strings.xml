@@ -54,8 +54,14 @@
 
     <!-- Welcome Fragment-->
     <string name="instructions">Instructions</string>
+
+    <!-- Instructions Fragment -->
+    <string name="btn_shoes_list">Shoes List</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 
 </resources>

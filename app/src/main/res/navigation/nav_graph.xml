@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
-        android:name="InstructionsFragment"
+        android:name="com.udacity.shoestore.ui.instruct.InstructionsFragment"
         android:label="@string/instructions_fragment_label"
         tools:layout="@layout/fragment_instructions">
         <action
