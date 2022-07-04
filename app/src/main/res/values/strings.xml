@@ -62,9 +62,13 @@
     <string name="action_logout">Logout</string>
     <string name="desc_add_shoe">Add shoe</string>
 
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <!-- Shoe Details Fragment -->
+    <string name="add_shoe">Add Shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
