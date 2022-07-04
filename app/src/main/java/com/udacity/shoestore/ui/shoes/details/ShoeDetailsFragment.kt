@@ -31,10 +31,12 @@ class ShoeDetailsFragment : Fragment(R.layout.fragment_shoe_details), View.OnCli
     }
 
     private fun saveShoeAndGoBack() {
+        val sizeString = binding.tilShowSize.editText?.text?.toString()
+        val size = if (sizeString.isNullOrEmpty()) "0" else sizeString
         viewModel.addShoe(
             binding.tilShoeName.editText?.text?.toString() ?: "",
             binding.tilCompany.editText?.text?.toString() ?: "",
-            binding.tilShowSize.editText?.text?.toString() ?: "",
+            size,
             binding.tilDescription.editText?.text?.toString() ?: "",
         )
         findNavController().navigateUp()
