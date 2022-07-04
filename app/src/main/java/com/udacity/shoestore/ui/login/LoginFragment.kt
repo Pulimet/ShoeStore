@@ -16,7 +16,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_LoginFragment_to_WelcomeFragment)
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
     }
 }
