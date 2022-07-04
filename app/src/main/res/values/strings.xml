@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Shoe Store</string>
-    <string name="action_settings">Settings</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -58,6 +57,9 @@
 
     <!-- Instructions Fragment -->
     <string name="btn_shoes_list">Shoes List</string>
+
+    <!-- Shoes List Fragment -->
+    <string name="action_logout">Logout</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
