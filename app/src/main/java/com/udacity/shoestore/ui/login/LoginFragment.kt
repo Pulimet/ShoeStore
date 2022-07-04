@@ -8,15 +8,25 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
 import com.udacity.shoestore.ui.binding.FragmentBinding
 
-class LoginFragment : Fragment(R.layout.fragment_login) {
+class LoginFragment : Fragment(R.layout.fragment_login), View.OnClickListener {
 
     private val binding by FragmentBinding(FragmentLoginBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setClickListener()
+    }
 
-        binding.btnLogin.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+    private fun setClickListener() {
+        binding.btnSignIn.setOnClickListener(this)
+        binding.btnSignUp.setOnClickListener(this)
+    }
+
+    // View.OnClickListener
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btnSignIn -> findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+            R.id.btnSignUp -> findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
     }
 }
