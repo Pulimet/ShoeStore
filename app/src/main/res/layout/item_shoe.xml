@@ -7,7 +7,7 @@
     android:layout_margin="16dp">
 
     <TextView
-        android:id="@+id/etShoeName"
+        android:id="@+id/tvShoeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@id/tvCompany"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvSize"
-        app:layout_constraintStart_toEndOf="@id/etShoeName"
+        app:layout_constraintStart_toEndOf="@id/tvShoeName"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Company" />
 
@@ -41,7 +41,7 @@
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etShoeName"
+        app:layout_constraintTop_toBottomOf="@id/tvShoeName"
         tools:text="Description is here..." />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
